@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="plugin.video.example"
-version="2.0.1"
-name="Example Kodi Video Plugin"
-provider-name="Roman_V_M">
+<addon id="plugin.video.wftda"
+version="0.1"
+name="WFTDA.TV"
+provider-name="jonnyathan">
 <requires>
   <import addon="xbmc.python" version="2.24.0"/>
 </requires>
@@ -10,8 +10,8 @@ provider-name="Roman_V_M">
   <provides>video</provides>
 </extension>
 <extension point="xbmc.addon.metadata">
-  <summary lang="en">Example Kodi Video Plugin</summary>
-  <description lang="en">An example video plugin for Kodi mediacenter.</description>
-  <disclaimer lang="en">Free sample videos are provided by www.vidsplay.com.</disclaimer>
+  <summary lang="en">WFTDA.TV</summary>
+  <description lang="en">Watch roller derby from the WFTDA archives.</description>
+  <disclaimer lang="en">This plugin is not affiliated with WFTDA.</disclaimer>
 </extension>
 </addon>
