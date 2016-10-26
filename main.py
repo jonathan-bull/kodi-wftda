@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # Module: default
-# Author: Roman V. M.
-# Created on: 28.11.2014
+# Author: Jonny Bull
+# Created on: 25.10.2016
 # License: GPL v.3 https://www.gnu.org/copyleft/gpl.html
 
 import sys
@@ -20,7 +20,7 @@ _handle = int(sys.argv[1])
 # from some web-site or online service.
 VIDEOS = {'2015 International WFTDA Championships': [{'name': '2015 WFTDA Champs - D1 Game 12: Gotham Girls Roller Derby vs Rose City Rollers',
                        'thumb': 'https://i.ytimg.com/vi/umGAlbit2iY/hqdefault.jpg',
-                       'video': 'https://r2---sn-aigl6n76.googlevideo.com/videoplayback?expire=1477438976&upn=FWlWh7sHjuM&itag=18&ratebypass=yes&pl=22&ip=82.10.48.152&ms=au&ei=oJkPWKydB8isW_j8p6gB&mv=m&mt=1477417144&id=o-AHboCwFWaRTMFNetcqBq0AmpqGupxWQf_U9WjilDt1d5&mn=sn-aigl6n76&mm=31&mime=video%2Fmp4&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cnh%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&ipbits=0&initcwndbps=1266250&requiressl=yes&lmt=1449944510898131&dur=6368.258&source=youtube&key=yt6&signature=0B627771C5A4962C5BED1072986070844F32A0C9.C0D616F890E2631909E07E995642FB46B9BC6364&nh=IgpwcjAzLmxocjI2Kg0yMTMuMTA0Ljg1Ljkz&cpn=IgYz11x4hEt_kVhD&ptk=7eMWpvytqd3gYAqxTl9w7g&oid=JsWy59VZnJWiUzYxAYMPyw&ptchn=7eMWpvytqd3gYAqxTl9w7g&pltype=content&c=MWEB&cver=1.20161020',
+                       'video': 'https://r6---sn-8pgbpohxqp5-cime.googlevideo.com/videoplayback?ei=IpoQWJDrIOH_iAbshYWgCg&ms=au&mt=1477482748&mv=m&pcm2=yes&expire=1477504642&requiressl=yes&ipbits=0&mm=31&mn=sn-8pgbpohxqp5-cime&initcwndbps=2503750&ratebypass=yes&signature=382D5D44081D504F1EF6C8245D0937FB70163276.56077658A0C2F29162C79EBFCDAEEFF7F45ACD6A&pl=26&upn=Z0bsO4zEs28&mime=video%2Fmp4&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&id=o-AN3I4Su6UEbk_9HVTe6J4phjuO9MhM-7LXbA8mwIkWsl&itag=22&source=youtube&ip=82.10.48.152&key=yt6&dur=6368.258&lmt=1472945845341741',
                        'genre': 'Final'},
                       {'name': 'Alligator',
                        'thumb': 'http://www.vidsplay.com/vids/alligator.jpg',
