@@ -10,6 +10,8 @@ import YDStreamExtractor
 import xbmcgui
 import xbmcplugin
 
+import logging
+
 # Get the plugin url in plugin:// notation.
 _url = sys.argv[0]
 # Get the plugin handle as an integer number.
@@ -177,6 +179,7 @@ def play_video(path):
 
     vid = YDStreamExtractor.getVideoInfo(path,quality=1) #quality is 0=SD, 1=720p, 2=1080p and is a maximum
     stream_url = vid.streamURL()
+    logging.notice('Stream URL set to %s' % stream_url);
     xbmcplugin.setResolvedUrl(_handle, True, listitem=stream_url)
 
     # Pass the item to the Kodi player.
