@@ -21,7 +21,7 @@ _handle = int(sys.argv[1])
 # from some web-site or online service.
 VIDEOS = {'2015 International WFTDA Championships': [{'name': '2015 WFTDA Champs - D1 Game 12: Gotham Girls Roller Derby vs Rose City Rollers',
                        'thumb': 'https://i.ytimg.com/vi/umGAlbit2iY/hqdefault.jpg',
-                       'video': 'https://r6---sn-8pgbpohxqp5-cime.googlevideo.com/videoplayback?ms=au&mv=m&mt=1477483029&key=yt6&ip=82.10.48.152&upn=g87_ERm3dpY&id=o-ALEazmiGrjJu-O0rLh_O2CgkaZTYUOPJYMClIk8tpNxd&mn=sn-8pgbpohxqp5-cime&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cupn%2Cexpire&ratebypass=yes&signature=5E8A90B54576376FD3621F7FE65CEDDEB3FD49D2.A61ECB31A83C3382E63FFE7302630D05DD812C48&initcwndbps=2457500&mm=31&ipbits=0&source=youtube&pl=26&itag=22&dur=6368.258&mime=video%2Fmp4&expire=1477504919&ei=N5sQWNzqDMepW4ONpfAI&lmt=1472945845341741&requiressl=yes',
+                       'video': 'umGAlbit2iY',
                        'genre': 'Final'},
                       {'name': 'Alligator',
                        'thumb': 'http://www.vidsplay.com/vids/alligator.jpg',
@@ -174,8 +174,13 @@ def play_video(path):
     """
     # Create a playable item with a path to play.
     play_item = xbmcgui.ListItem(path=path)
+
+    vid = YDStreamExtractor.getVideoInfo(path,quality=1) #quality is 0=SD, 1=720p, 2=1080p and is a maximum
+    stream_url = vid.streamURL()
+    xbmcplugin.setResolvedUrl(_handle, True, listitem=stream_url)
+
     # Pass the item to the Kodi player.
-    xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
+    #xbmcplugin.setResolvedUrl(_handle, True, listitem=play_item)
 
 
 def router(paramstring):
