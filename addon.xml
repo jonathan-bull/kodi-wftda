@@ -5,6 +5,7 @@ name="WFTDA.TV"
 provider-name="jonnyathan">
 <requires>
   <import addon="xbmc.python" version="2.24.0"/>
+  <import addon="script.module.youtube.dl" version="16.627.0"/>
 </requires>
 <extension point="xbmc.python.pluginsource" library="main.py">
   <provides>video</provides>
